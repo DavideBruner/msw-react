@@ -109,9 +109,9 @@ const customSetupServer = (handlers) => {
 </MockProvider>
 ```
 
-### useWorker and MswWorker
+### useWorker - MswWorker
 
-Each child of the MockProvider will have access to the worker instance. Either by using the `useWorker` hook, or by using the `MswWorker` component:
+Each child of the MockProvider will have access to the worker instance. Either by using the `useWorker` hook:
 
 ```tsx
 import { useWorker } from "msw-react";
@@ -124,6 +124,8 @@ const Child = () => {
   return <div>Hello</div>;
 };
 ```
+
+Or using the `MswWorker` component:
 
 ```tsx
 import { MswWorker } from 'msw-react';
